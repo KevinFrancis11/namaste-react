@@ -2,10 +2,9 @@
   "name": "namste-node",
   "version": "1.0.0",
   "description": "This is namaste react by Akshay siani",
-
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "rm -rf .parcel-cache && parcel index.html",
+    "build": "rm -rf .parcel-cache && parcel build index.html",
     "test": "jest"
   },
   "repository": {

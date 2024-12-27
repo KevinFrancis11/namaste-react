@@ -1,31 +1,48 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/** 
- * <div id="parent">
- *      <div id="child">
- *          <h1></h1>
- *          <h2></h2>
- *      </div>
- * </div>
- * 
- * 
- */
 
-const parent = React.createElement("div", { id: "parent" },
-    [React.createElement("div", { id: "child" },
-        [React.createElement("h1", {}, "This is Namaste react 🚀"),
-        React.createElement("h2", {}, "I'am an h2 tag")
-        ]),
-    React.createElement("div", { id: "child" },
-        [React.createElement("h1", {}, "I'am an h1 tag"),
-        React.createElement("h2", {}, "I'am an h2 tag")])]);
+const heading = React.createElement("h1", { id: "heading" }, "heading tag");
+
+const ele = (<span>React element1🚤</span>)
 
 
+//JSX
+//this is a react element
+const jsxHeading = (
+    <h1 id="heading" className="head">
+        {ele}
+        React element2 🚀
+    </h1>
+    );
 
-// const heading = React.createElement("h1", { id: "heading", xyz: "abc" }, "Hello world from react js.");
-console.log(parent);
+const Title = () => (
+    <h1 className="head">
+        Namaste react using jsx 🚌
+    </h1>
+);
+
+
+const number = 1000;
+//functional component
+//this is a component which has a jsx(react element) in it.
+const HeadingComponent = () => (
+    <div className="container">
+        {jsxHeading}
+        {Title()} {/* you can also call the function */}
+        <Title />{/*  Rendering other components inside a component is known as !!!component composition!!!! */}
+        <h1 className="heading">
+            Namaste react functional component.🚀
+        </h1>
+    </div>
+);
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+// root.render(jsxHeading); this is the code to render react element
+
+//this is the code to render react component
+root.render(<HeadingComponent />)
 
