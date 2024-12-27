@@ -1,2 +1,14 @@
 1)WHAT IS CDN 
 2)WHAT IS CROSSORIGIN
+
+episode-02
+***********
+1)package.json is a configuration file for npm 
+    1.1)It keeps track of what version of that package that we have installed in our project
+2)most important dependency in react is bundler
+    2.1)Bundlere bundles the code into production ready.
+    2.2)we are gonna use parcel bundler
+3)carrot and tilde in package.json
+    3.1)tilde(~) will upgrade to major version for exaple "parcel": "~2.13.3" to "parcel": "~3.0.0".
+    3.2)carrot(^) will upgrade to minor version for example "parcel": "^2.13.3" to "parcel": "^2.13.4"
+4)package-lock.json - keeps the exact version of the package it will not have carrot(^) or tilda(~).
