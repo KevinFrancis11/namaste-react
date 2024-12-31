@@ -32,3 +32,13 @@
  *  -Address
  *  -Contact
  */
+
+
+
+ Two type of export and import 
+ 1- Default export and import 
+    export default name Component
+    import Component from "/path"
+ 2- Named export and import
+    export const Component;
+    import {Component} from "/path" 
