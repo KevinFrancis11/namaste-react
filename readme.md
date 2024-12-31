@@ -12,3 +12,23 @@
  - Bundling
  - Compressing
 - consistent hashing
+
+
+/**
+ * Header
+ *  -Logo
+ *  -Nav Items
+ * Body
+ *  -Search
+ *  -RestaurentContainer
+ *    -RestaurentCard
+ *      -image
+ *      -name
+ *      -star rating
+ *      -cuisine, delivery time
+ * Footer
+ *  -Copyright
+ *  -Links
+ *  -Address
+ *  -Contact
+ */
