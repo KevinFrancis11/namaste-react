@@ -1,4 +1,7 @@
-# namste react welcom 
+# namste react welcome 
+
+# React element is a plane js object at the end of the day.
+# React component is a plane js function at the end of the day.
 
 # parcel
 - Dev Build
@@ -44,3 +47,9 @@
  2- Named export and import
     export const Component;
     import {Component} from "/path" 
+
+
+# react hooks
+ (React hooks are normal js function which is given to us.)
+ - useState() - Superpowerful state variable in react.
+ - useEffect()
