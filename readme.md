@@ -53,3 +53,8 @@
  (React hooks are normal js function which is given to us.)
  - useState() - Superpowerful state variable in react.
  - useEffect()
+
+
+# Two types of routing in web applications
+ - Client side routing :- It is the routing we use in react js, in which all the        components are loaded to the user at the first time and each routes are just loaded.  
+ - Server side routing :- It is the normal html routing every time we move to another page the whole website is reloaded.
