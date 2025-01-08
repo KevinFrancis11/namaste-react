@@ -32,7 +32,7 @@ const Body = () => {
   }
 
   // console.log(filteredRestaurants)
-
+  console.log(filteredRestaurants)
 
   return listOfRestaurants.length == 0 ? <Shimmer /> : (
     <div className="body">
