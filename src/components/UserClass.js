@@ -1,24 +1,37 @@
 import React from "react";
 
-class UserClass extends React.Component{
+class UserClass extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        
+
         this.state = {
             count: 0,
             count2: 1,
         };
+         console.log("Child Constructor");
+        
     }
 
-    render(){
-        const {name, location} = this.props;
-        const {count, count2} = this.state;
-        return(
+    componentDidMount(){
+        console.log("Child componentDidMount");    
+    }
+
+    render() {
+        const { name, location } = this.props;
+        const { count } = this.state;
+            console.log("Child render")
+        return (
             <div className="user-card">
                 <h1>Count= {count}</h1> {/* or {this.state.count}*/}
-                <h1>Count2= {count2}</h1> 
-                <h2>Name: {name}</h2>  {/**or {this.props.name} */}        
+                <button onClick={() => {
+                    this.setState({
+                        count: this.state.count + 1
+                    })
+                 }}>
+                    Increase
+                 </button>
+                <h2>Name: {name}</h2>  {/**or {this.props.name} */}
                 <h3>Location: {location}</h3>
                 <h4>Contact: kevinfrancis967@gmail.com</h4>
             </div>
